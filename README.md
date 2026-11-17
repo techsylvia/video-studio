@@ -21,8 +21,9 @@ who do everything themselves.
 2. **Open it in your AI editor.**
    - *Claude Code:* open the Claude desktop app → **Code** tab → **Local** → **Select folder** →
      `Video-Studio`. Use **Manual** permission mode for setup so Claude asks before every command.
-     Needs a paid Claude plan (Pro, Max, Team or Enterprise).
-   - *Codex:* open the Codex app and select the `Video-Studio` folder.
+     Needs a paid Claude plan (Pro or higher).
+   - *Codex:* open the Codex app and select the `Video-Studio` folder. Needs a ChatGPT plan;
+     Plus or higher is best, as Free and Go only include limited Codex use.
 3. **Paste the setup prompt** from [`START-HERE.md`](START-HERE.md) (also in the PDF guides:
    [Claude Code](guides/Build-Your-AI-Video-Editor-in-Claude-Code.pdf) ·
    [Codex](guides/Build-Your-AI-Video-Editor-in-Codex.pdf)). The AI checks your Mac, asks

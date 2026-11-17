@@ -23,7 +23,9 @@ who do everything themselves.
      `Video-Studio`. Use **Manual** permission mode for setup so Claude asks before every command.
      Needs a paid Claude plan (Pro, Max, Team or Enterprise).
    - *Codex:* open the Codex app and select the `Video-Studio` folder.
-3. **Paste the setup prompt** from [`START-HERE.md`](START-HERE.md). The AI checks your Mac, asks
+3. **Paste the setup prompt** from [`START-HERE.md`](START-HERE.md) (also in the PDF guides:
+   [Claude Code](guides/Build-Your-AI-Video-Editor-in-Claude-Code.pdf) ·
+   [Codex](guides/Build-Your-AI-Video-Editor-in-Codex.pdf)). The AI checks your Mac, asks
    before installing anything (FFmpeg, a small Python environment, a local speech model), runs a
    test reel and tells you what works.
 4. **Make your first reel.** Export a clip from Photos (File › Export › Export Unmodified Original)
@@ -39,6 +41,7 @@ who do everything themselves.
 | `prompts/edit-reel.md` | The full edit brief (used by both tools) |
 | `brand/brand.json` | Your colours, fonts, caption style and pacing (the AI asks once, then saves) |
 | `studio` | One launcher for every action (`./studio help`) |
+| `guides/` | The illustrated setup guides as PDFs (Claude Code and Codex) |
 | `scripts/` | doctor, setup, probe, transcribe, autocut, render, compare, smoke-test |
 | `raw/` `reels/` `exports/` `references/` | Your footage, edit records, renders and reference files (kept off GitHub) |
 

@@ -19,7 +19,7 @@ who do everything themselves.
 1. **Download this kit.** On this page click the green **Code** button → **Download ZIP**. Unzip it,
    rename the folder to `Video-Studio` and put it somewhere you keep projects.
 2. **Open it in your AI editor.**
-   - *Claude Code:* open the Claude desktop app → **Code** tab → **Local** → **Select folder** →
+   - *Claude Code:* open the Claude desktop app → **Code** tab → **This computer** → pick the folder
      `Video-Studio`. Use **Manual** permission mode for setup so Claude asks before every command.
      Needs a paid Claude plan (Pro or higher).
    - *Codex:* open the Codex app and select the `Video-Studio` folder. Needs a ChatGPT plan;

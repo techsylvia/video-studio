@@ -1,6 +1,6 @@
 # Start here
 
-You have the Video-Studio folder open in Claude Code (desktop app → **Code** tab → **Local**) or in
+You have the Video-Studio folder open in Claude Code (desktop app → **Code** tab → **This computer**) or in
 Codex. No personal footage is needed for setup.
 
 ## 1. Paste this setup prompt

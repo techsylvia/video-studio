@@ -1,0 +1,30 @@
+# Personal footage and renders never go to GitHub
+raw/*
+reels/*
+exports/*
+references/*
+!raw/.gitkeep
+!reels/.gitkeep
+!exports/.gitkeep
+!references/.gitkeep
+
+# Fonts may be licensed; keep the README only
+brand/fonts/*
+!brand/fonts/README.md
+
+# Media anywhere else
+*.mov
+*.MOV
+*.mp4
+*.m4a
+*.aiff
+*.wav
+*.heic
+*.HEIC
+
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/settings.local.json

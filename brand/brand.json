@@ -1,0 +1,49 @@
+{
+  "configured": false,
+  "_note": "Starter values. The AI asks the creator once for colours, font, caption style and pacing, saves them here and sets configured to true.",
+  "palette": {
+    "accent": "#A4B9CE",
+    "cream": "#F6F1E9",
+    "ink": "#20272C"
+  },
+  "fonts": {
+    "captions": "",
+    "headlines": ""
+  },
+  "captions": {
+    "enabled": true,
+    "font_size": 66,
+    "color": "#FFFFFF",
+    "stroke_color": "#20272C",
+    "stroke_width": 5,
+    "box": false,
+    "box_color": "#20272C",
+    "box_opacity": 0.55,
+    "y": 0.70,
+    "max_width": 0.82,
+    "words_per_caption": 4,
+    "max_chars": 26,
+    "uppercase": false
+  },
+  "headlines": {
+    "font_size": 72,
+    "color": "#F6F1E9",
+    "box_color": "#20272C",
+    "box_opacity": 0.6,
+    "y": 0.13
+  },
+  "pacing": {
+    "fps": 30,
+    "max_gap": 0.45,
+    "pad": 0.12,
+    "min_clip": 0.6
+  },
+  "export": {
+    "width": 1080,
+    "height": 1920,
+    "crf": 18
+  },
+  "music": {
+    "volume": 0.12
+  }
+}

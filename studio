@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Video-Studio launcher. Run ./studio help for the list of actions.
+set -euo pipefail
+cd "$(dirname "$0")"
+PY=".venv/bin/python"
+[ -x "$PY" ] || PY="python3"
+
+cmd="${1:-help}"
+[ $# -gt 0 ] && shift
+
+case "$cmd" in
+  doctor)      exec "$PY" scripts/doctor.py "$@" ;;
+  setup)       exec bash scripts/setup.sh "$@" ;;
+  probe)       exec "$PY" scripts/probe.py "$@" ;;
+  transcribe)  exec "$PY" scripts/transcribe.py "$@" ;;
+  autocut)     exec "$PY" scripts/autocut.py "$@" ;;
+  render)      exec "$PY" scripts/render.py "$@" ;;
+  compare)     exec "$PY" scripts/compare.py "$@" ;;
+  smoke-test)  exec "$PY" scripts/smoke_test.py "$@" ;;
+  help|-h|--help|*)
+    cat <<'EOF'
+Video-Studio — local AI video editor toolkit
+
+  ./studio doctor                      check this computer (installs nothing)
+  ./studio setup                       create .venv and install Pillow + local speech-to-text
+  ./studio smoke-test                  render test + speech test, no personal footage
+  ./studio probe raw/CLIP.MOV          orientation, size, frame rate, colour, audio
+  ./studio transcribe raw/CLIP.MOV --reel NAME
+                                       word-timestamped transcript in reels/NAME/
+  ./studio autocut raw/A.MOV raw/B.MOV --reel NAME
+                                       first-pass cut list without long pauses
+  ./studio render reels/NAME/cutlist.json [--draft]
+                                       render to exports/ (never overwrites) and verify
+  ./studio compare raw/CLIP.MOV exports/NAME.mp4
+                                       side-by-side colour check
+EOF
+    ;;
+esac
